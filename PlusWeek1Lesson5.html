@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+.customer-details{
+    border: solid;
+    display: inline-block;
+    padding: 20px
+}
+    </style>
+  </head>
+  <body>
+    <h1>Welcome back!</h1>
+    <div class="customer-details">
+    <form action="/submit">
+        
+      <label for="email">Please enter your email</label>
+      <br>
+      <input
+        type="email"
+        placeholder="Your email here"
+        name="email"
+        id="email"
+        required
+      />
+        <br>
+        <br>
+      <label for="password">Please enter your password</label>
+      <br>
+      <input
+        type="password"
+        placeholder="Your password here"
+        name="pwd"
+        id="password"
+        required
+      />
+      <br>
+      <br>
+      <input type="submit" value="Login" />
+      </div>
+    </form>
+  </body>
+</html>

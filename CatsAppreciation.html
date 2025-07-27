@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐱 Kitty SOS 🐱</title>
+    <style>
+      * {
+        font-family: Trebuchet MS, serif;
+        font-weight: lighter;
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(222, 168, 248) 0%,
+          rgb(168, 222, 248) 21.8%,
+          rgb(189, 250, 205) 35.6%,
+          rgb(243, 250, 189) 52.9%,
+          rgb(250, 227, 189) 66.8%,
+          rgb(248, 172, 172) 90%,
+          rgb(254, 211, 252) 99.7%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #ad64c5;
+        background: transparent;
+      }
+      h2 {
+        text-align: center;
+        color: #ad64c5;
+        background: transparent;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 9px;
+        width: 100%;
+        max-width: 700px;
+        mix-blend-mode: miltiply;
+        opacity: 0.9;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+      .link-to-site {
+        border: 2px solid #eaceb4;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 9px;
+        margin: 17px;
+        background: transparent;
+      }
+      .more-details {
+        text-align: center;
+        display: block;
+        color: #ad64c5;
+        text-decoration: none;
+        background: transparent;
+      }
+      .more-details:hover {
+        text-decoration: underline;
+        color: #83d9ef;
+      }
+      .main-text {
+        line-height: 1.5;
+        font-size: 18px;
+        margin: 20px 0 10px;
+        color: #ad64c5;
+        background: transparent;
+      }
+      .action-button {
+        display: block;
+        margin: 20px auto;
+        background: #c38de5;
+        color: #feff94;
+        font-size: 14px;
+        padding: 20px 20px;
+        border: none;
+        border-radius: 11px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 300ms ease-in-out;
+      }
+
+      .action-button:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+        color: #ad64c5;
+        background: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lifeline | Cats Protection</h1>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/159/529/original/230815_Cats-Protection_Scene12_168-640x427.jpg?1741358237"
+        alt="Cat walking out of pet carrier opened by woman"
+      />
+      <div class="link-to-site">
+        <h2>Help a cat in need TODAY</h2>
+        <a
+          href="https://www.cats.org.uk/what-we-do/cp-lifeline#"
+          class="more-details"
+          target="_blank"
+        >
+          <strong> More details here</strong></a
+        >
+      </div>
+      <p class="main-text">
+        Cats Protection, offer a
+        <em>free and confidential fostering service </em> for cats whose
+        families are fleeing domestic abuse so they can rest assured their cat
+        will be taken care of until they can be safely reunited. Referrals are
+        handled by a specialist and experienced team, who support owners
+        referring to the service, arrange to collect cats, and organise foster
+        placements through a wonderful network of dedicated Lifeline volunteers.
+        <br />
+        Lifeline is currently available across the South East (London,
+        Hertfordshire, Bedfordshire, Berkshire, Buckinghamshire, Essex, Kent,
+        Sussex, Surrey and Hampshire), and throughout Yorkshire, East Anglia,
+        the Midlands, Wales and Scotland. If you live outside of these areas,
+        please do get in touch with your nearest team and we’ll chat through
+        your options with you.
+      </p>
+      <hr />
+      <span>
+        <button class="action-button">Help cats now</button>
+        <p class="footer">
+          This page was built by Lola Fawole, Lifeline volunteer of 6 years
+        </p>
+      </span>
+    </div>
+    <script>
+      function userAction() {
+        let name = prompt("What is your name?");
+        if (name) {
+          name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+        }
+        let email = prompt("What is your email?");
+        alert(
+          `Thank you for registering your interest ${name}, we will be in touch shortly!`
+        );
+      }
+
+      let actionButton = document.querySelector(".action-button");
+      actionButton.addEventListener("click", userAction);
+    </script>
+  </body>
+</html>
